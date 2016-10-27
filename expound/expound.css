@@ -1,0 +1,120 @@
+/**
+ * 解释Bootstrap v3.3.0 css样式源码
+ * author: edison;
+ * date: 2016-10-26;
+ */
+html{
+	font-family: sans-serif;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;/*  -webkit-text-size-adjust: 100%; 解决的是chrome
+	等以webkit为内核的浏览器下不支持小于12px的问题，在chrome下，缩小网页，
+	其他元素缩小，但是字体大小不变的问题。   -ms-text-size-adjust: 100%;；
+	解决IE的字体调整问题。 */
+}
+body{
+	margin: 0;/*margin控制元素外框与包含该元素的容器边框距离。marign:0;让网页顶部顶到
+	浏览器顶部，（不加margin:0；情况下默认有一段空白）
+	 */
+}
+article, /*html5标签，用来定义外部的内容*/
+aside, /*html5标签，用来定义article以外的内容，(提示:)可做文章侧栏*/
+details, /*html5标签，用于描述文档或文档某个细节*/
+figcaption, /*html5标签，用作文档中插图的图像，带有一个标题*/
+figure, /*html5标签，用于文档中插图的图像*/
+footer, /*html5标签，定义文档或节的页脚，通常包括文档的版权信息、联系信息等等
+，可用于底部导航栏*/
+header, /*html5标签，定义文档的页眉，可用于头部导航*/
+hgroup, /*html5标签，用于对网页或区段（section）的标题进行组合*/
+main, /*html5标签，规定文档的主要内容。（提示：）在一个文档中，不能出现一个以上的
+main元素。main元素不能是以下元素的子元素<article>、<aside>、<footer>、<header> 或 <nav>。*/
+menu, /*html5标签,目前所有浏览器都不支持此标签。但是可以使用*/
+nav, /*html5标签，定义导航链接的部分，可用来制作头部导航*/
+section, /*html5标签，定义文档中的节（区段）*/
+summary/*标签包含 details 元素的标题，"details" 元素用于描述有关文档或文档片段的详细信息*/
+{
+	display: block; /* 让以上标签以块元素显示，现代高级浏览器可识别以上标签是块元素，
+由于部分浏览器不识别html5标签，不知道怎样把上面这些元素显示成块元素，所以会把它们挤到一起
+。为了让所用的浏览器都能显示成块元素，这里因此写上display: block 。*/
+}
+audio, /*html5标签，定义声音，比如音乐或其他音频流*/
+canvas, /*html5标签，标签定义图形，比如图表和其他图像。（提示：标签只是图形容器，您必须使用脚本来绘制图形。）*/
+progress, /*html5标签，定义运行中的进度（进程）。（提示：可以使用 <progress> 标签来显示 JavaScript 中耗费时间的函数的进度。）*/
+video /*html5标签，标签定义视频，比如电影片段或其他视频流。 */
+{
+	display: inline-block; /* 设置音频，视频，进度条的默认显示样式为内嵌块 */
+	vertical-align: baseline; /* 垂直对齐的方式为相对于父元素的基线对齐 */
+}
+audio:not([controls]) /* 设置audio标签，匹配所有没有controls属性的audio */
+{ 
+	display: none;	/* 防止现代浏览器显示没有控制条的音频 */
+	height: 0; /* 在IOS5设备中移除多余的高度 */
+}
+[hidden], /* 匹配所有带有hidden的属性元素 */
+template /* 模板标签 */
+{
+	display: none;
+	/* 设置template标签为不显示 */
+}
+a
+{
+	background-color: transparent; 
+	/* 设置背景颜色为透明 */
+}
+a:active,
+a:hover
+{
+	outline: 0;
+	/* outline（轮廓）是绘制于元素周围的一条线，位于边框边缘的外围，可起到突出元素的作用 
+	，设置为0，则表示不显示轮廓*/
+}
+abbr[title] /* 该标签指示简称或缩写,匹配所有带有title属性的abbr标签 */
+{
+	border-bottom: 1px dotted; 
+	/* 设置下边框为1个像素和虚线 */
+}
+b,
+strong
+{
+	font-weight: bold;
+	/* 设置b,strong两个标签的字体为粗体 */
+}
+dfn /* 该标签标记那些对特殊术语或短语的定义 */
+{
+	font-style: italic; 
+	/* 设置该标签的字体为斜体 */
+}
+h1
+{
+	margin: .67em 0; /* 设置外边距的上下边距为0.67em，左右边距为0 */
+	font-size: 2em; /* 设置字体大小为2em */
+}
+mark /* html5标签，定义带有记号的文本 */
+{
+	color: #000;
+	background: #ff0;
+}
+small
+{
+	font-size: 80%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
