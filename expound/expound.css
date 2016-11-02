@@ -3,6 +3,8 @@
  * author: edison;
  * date: 2016-10-26;
  */
+
+ /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 html{
 	font-family: sans-serif;
 	-webkit-text-size-adjust: 100%;
@@ -147,16 +149,158 @@ samp   /* 标签表示一段用户应该对其没有什么其他解释的文本�
 }
 button,
 input,
-optgroup,
+optgroup, /* 定义选项组，把相关的选项组合在一起 */
 select,
-textarea{
+textarea
+{
 	margin: 0;
-	font: inherit;
-	color: inherit;
+	font: inherit; /* 字体样式继承父元素 */
+	color: inherit; /*颜色继承父元素*/
 }
+button
+{
+	overflow: visible; /* 默认值。内容不会被修剪，会呈现在元素框之外 */
+}
+button,
+select
+{
+	text-transform: none; /* 控制文本的大小写,none表示默认值，定义带有小写字母和大写子母的标准文本 */
+}
+button,
+html input[type="button"],   /* 选择带有属性type="button"的input标签 */
+input[type="reset"],
+input[type="submit"]
+{
+	-webkit-appearance: button; 
+	/* appearance 属性允许使元素看上去像标准的用户界面元素。所有主流浏览器都不支持 appearance 属性。
+      Firefox 支持替代的 -moz-appearance 属性。Safari 和 Chrome 支持替代的 -webkit-appearance 属性。
+	cursor: pointer; cursor 属性规定要显示的光标的类型（形状）。 */
+}
+button[disabled],
+html input[disabled] /* 选择带有disabled属性的 input标签 */
+{
+	cursor: default; 
+}
+button::-moz-focus-inner, /* 火狐浏览器私有属性，用来改变button和input样式。在火狐浏览器上，button和input会有一条虚线框，此私有属性专门解决此问题 */
+input::-moz-focus-inner
+{
+	padding: 0;
+	border: 0;
+}
+input
+{
+	line-height: normal;
+}
+input[type="checkbox"], /* 选择带有check属性的input标签 */
+input[type="radio"] 
+{
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+			/* 为元素设定的宽度和高度决定了元素的边框盒。就是说，为元素指定的任何内边距和边框都将在已设定的宽度和高度内进行绘制。通过从已设定的宽度和高度分别减去边框和内边距才能得到内容的宽度和高度。 */
+	padding: 0;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outher-spin-button
+{
+	height: 0;
+}
+input[type="search"] 
+{
+	-webkit-box-sizing: content-box;
+	   -moz-box-sizing: content-box;
+	        box-sizing: content-box;
+	-webkit-appearance: textfield;   /* appearance 属性允许您使元素看上去像标准的用户界面元素。-webkit-appearance: textfield 将元素呈现为输入字段。 */
+	/* 所有主流浏览器都不支持 appearance 属性。
+      Firefox 支持替代的 -moz-appearance 属性。Safari 和 Chrome 支持替代的 -webkit-appearance 属性。
+	cursor: pointer; cursor 属性规定要显示的光标的类型（形状）。 */
+}
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration
+{
+	-webkit-appearance: none;
+}
+fieldset /*  该标签将表单内容的一部分打包，生成一组相关表单的字段。当一组表单元素放到 <fieldset> 标签内时，浏览器会以特殊方式来显示它们，它们可能有特殊的边界、3D 效果，或者甚至可创建一个子表单来处理这些元素。 */
+{
+	padding: .35em .625em .75em;
+	margin: 0 2px;
+	border: 1px solid #c0c0c0; /* 对fieldset标签进行默认样式 */
+}
+legend /* 该标签为fieldset元素定义标题 */
+{
+  padding: 0;
+  border: 0;
+}
+textarea 
+{
+  overflow: auto;
+}
+optgroup 
+{
+  font-weight: bold;
+}
+table 
+{
+  border-spacing: 0; /* border-spacing 属性设置相邻单元格的边框间的距离（仅用于“边框分离”模式）。 */
+  border-collapse: collapse;
+}
+td,
+th 
+{
+  padding: 0;
+}
+/*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
 
-
-
+@media print /* 使用“media”来指定特定的媒体类型，print表示在打印的时候引入里面的样式 */
+{
+	*,
+	*:before,
+	*:after 
+	{
+		color: #000 !important;
+		text-shadow: none !important;
+		background: transparent !important;
+		-webkit-box-shadow: none !important;
+		        box-shadow: none !important;
+	}
+	a,
+	a:visited
+	{
+		text-decoration: underline;
+	}
+	a[href]:after
+	{
+		content: " (" attr(href) ")";
+	}
+	abbr[title]:after
+	{
+		content: " (" attr(title) ")";
+	}
+	a[href^="#"]:after,
+	a[href^="javascript:"]:after
+	{
+		content: "";
+	}
+	pre,
+	blockquote
+	{
+		border: 1px solid #999;
+		page-break-inside: avoid;
+	}
+	thead
+	{
+		display: table-header-group;
+	}
+	tr,
+	img
+	{
+		page-break-after: avoid;
+	}
+	img
+	{
+		max-width: 100% !important;
+	}
+}
 
 
 
