@@ -1063,6 +1063,179 @@ img{
   /* 圆形图片样式 */
   border-radius: 50%;
 }
+hr{
+  /* bootstrap对hr默认样式进行重置修改 */
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #eee;
+}
+.sr-only{
+  /*
+    全称是 screen reader only，意为：（仅供）屏幕阅读器，这个 class 主要用于增强 accessbility（可访问性）。有时候 UI 
+上会出现一些仅供视觉识别的元素，比如说“汉堡包菜单按钮”，只有视力正常的人才能清楚辨识这些元素的作用。而残障人士，比如弱势或盲人是不可能知道这些
+视觉识别元素是什么的。他们上网使用的是屏幕阅读器，也就是 screen reader（sr），屏幕阅读器需要找到能辨识的文本说明然后“读”出来给用户听。问题是图形元素怎么可能“读出来”呢？因此我们还要写上这些元素的文
+本说明，但是又不需要展示给普通用户看到，于是加上 sr-only 的意义就在于能保证屏幕阅读器正确读取且不会影响 UI 的视觉呈现。
+  */
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+.sr-only-focusable:active,
+.sr-only-focusable:focus{
+  position: static;
+  width: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6{
+  /* Bootstrap对h1 - h6样式进行重置 */
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1; /* line-height值为1.1，是1.1倍，实际值line-height = font-size * 1.1 */
+  color: inherit;
+}
+h1 small,
+h2 small,
+h3 small,
+h4 small,
+h5 small,
+h6 small,
+.h1 small,
+.h2 small,
+.h3 small,
+.h4 small,
+.h5 small,
+.h6 small,
+h1 .small,
+h2 .small,
+h3 .small,
+h4 .small,
+h5 .small,
+h6 .small,
+.h1 .small,
+.h2 .small,
+.h3 .small,
+.h4 .small,
+.h5 .small,
+.h6 .small{   
+  font-weight: normal;
+  line-height: 1;
+  color: #777;
+}
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3{
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+h1 small,
+.h1 small,
+h2 small,
+.h2 small,
+h3 small,
+.h3 small,
+h1 .small,
+.h1 .small,
+h2 .small,
+.h2 .small,
+h3 .small,
+.h3 .small{
+  font-size: 65%;
+}
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+h4 small,
+.h4 small,
+h5 small,
+.h5 small,
+h6 small,
+.h6 small,
+h4 .small,
+.h4 .small,
+h5 .small,
+.h5 .small,
+h6 .small,
+.h6 .small{
+  font-size: 75%;
+}
+h1,
+.h1{
+  font-size: 36px;
+}
+h2,
+.h2{
+  font-size: 30px;
+}
+h3,
+.h3{
+  font-size: 24px;
+}
+h4,
+.h4{
+  font-size: 18px;
+}
+h5,
+.h5{
+  font-size: 14px;
+}
+h6,
+.h6{
+  font-size: 12px;
+}
+p{
+  margin: 0 0 10px;
+}
+.lead{
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.4;
+}
+@media (min-width: 768px){
+  .lead{
+    font-size: 85%;
+  }
+}
+small,
+.small{
+  font-size: 85%;
+}
+mark,
+.mark{
+  padding: .2em;
+  background-color: #fcf8e3;
+}
+
+
 
 
 
